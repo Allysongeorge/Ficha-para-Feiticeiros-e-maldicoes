@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Arquivo Amaldiçoado | Ficha de personagem</title
+  ><meta
+    name="description"
+    content="Seu arquivo de personagens para Feiticeiros & Maldições. Atributos, técnicas, invocações e inventário em uma ficha interativa."
+  /><link rel="stylesheet" href="style.css" />
+  <body>
+    <aside>
+      <div class="brand">
+        <b>呪</b><span>ARQUIVO<br /><strong>AMALDIÇOADO</strong></span>
+      </div>
+      <div class="side-label">SEU ARQUIVO</div>
+      <select id="characters" aria-label="Personagem"></select
+      ><button id="new">＋ Novo personagem</button>
+      <nav id="nav"></nav>
+      <div class="aside-bottom">
+        <span class="dot"></span> <span id="saved">Salvo neste navegador</span>
+        <p>
+          FEITICEIROS & MALDIÇÕES<br />Baseado na versão 2.5.2<br />Projeto de
+          fã, não oficial.
+        </p>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <span>ARQUIVO / <b id="breadcrumb">VISÃO GERAL</b></span>
+        <div>
+          <button id="export">↓ Exportar ficha</button
+          ><button id="import">↑ Importar</button
+          ><input
+            type="file"
+            id="json"
+            accept="application/json"
+            hidden
+          /><button id="print">Imprimir</button>
+        </div>
+      </header>
+      <section class="intro">
+        <div>
+          <div class="eyebrow">
+            REGISTRO DE FEITICEIRO <span>•</span> <span id="code"></span>
+          </div>
+          <h1>Todo poder tem<br />uma <em>história.</em></h1>
+          <p>Conheça seus limites. Registre sua evolução.</p>
+        </div>
+        <div class="seal" aria-hidden="true">
+          呪<small>ARQUIVO AMALDIÇOADO</small>
+        </div>
+      </section>
+      <div class="page-heading">
+        <div>
+          <h2 id="pageTitle">Visão geral</h2>
+          <p id="pageSub">Seu personagem, pronto para a próxima sessão.</p>
+        </div>
+        <button class="primary" id="edit">Editar personagem ↗</button>
+      </div>
+      <div id="view"></div>
+      <footer>
+        <span>ARQUIVO AMALDIÇOADO</span
+        ><span
+          >Seus dados ficam neste navegador. Exporte para guardar uma
+          cópia.</span
+        ><button id="delete">Excluir personagem</button>
+      </footer>
+    </main>
+    <dialog id="editor">
+      <form method="dialog">
+        <div class="dialog-head">
+          <h2>Identidade do personagem</h2>
+          <button aria-label="Fechar">✕</button>
+        </div>
+        <div id="identity" class="formgrid"></div>
+        <button class="primary">Concluir</button>
+      </form>
+    </dialog>
+    <div id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
