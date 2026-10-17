@@ -1,1 +1,0 @@
-# Ficha-para-Feiticeiros-e-maldi-es-web-Em-desenvolvimento-
