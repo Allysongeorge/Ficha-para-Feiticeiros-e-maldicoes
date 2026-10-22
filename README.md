@@ -19,3 +19,5 @@
 - `skillTotal`: calcula o total de uma perícia.
 - `roll`: faz a rolagem.
 
+  ### realizado para fins de entretenimento e adquirir conhecimento na pratica 
+
